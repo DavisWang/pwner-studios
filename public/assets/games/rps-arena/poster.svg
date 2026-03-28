@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">RPS Arena poster</title>
+  <desc id="desc">A retro poster with bracket lines and rock paper scissors emblems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#17100d" />
+      <stop offset="100%" stop-color="#0f1822" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)" />
+  <circle cx="740" cy="120" r="88" fill="#2cb9a4" fill-opacity="0.14" />
+  <circle cx="188" cy="138" r="92" fill="#f47f42" fill-opacity="0.14" />
+  <g stroke="#fdf6e8" stroke-opacity="0.18" stroke-width="8" fill="none">
+    <path d="M112 170h92v70h122v120h108" />
+    <path d="M112 430h92v-70h122v-120h108" />
+    <path d="M848 170h-92v70H634v120H526" />
+    <path d="M848 430h-92v-70H634v-120H526" />
+  </g>
+  <g transform="translate(104 126)">
+    <circle cx="0" cy="0" r="58" fill="#f47f42" />
+    <text x="-28" y="16" fill="#12161d" font-family="monospace" font-size="54" font-weight="700">R</text>
+  </g>
+  <g transform="translate(856 126)">
+    <circle cx="0" cy="0" r="58" fill="#2cb9a4" />
+    <text x="-28" y="16" fill="#12161d" font-family="monospace" font-size="54" font-weight="700">P</text>
+  </g>
+  <g transform="translate(480 300)">
+    <circle cx="0" cy="0" r="84" fill="#fdf6e8" fill-opacity="0.08" />
+    <circle cx="0" cy="0" r="58" fill="#f3c66a" />
+    <text x="-28" y="16" fill="#12161d" font-family="monospace" font-size="54" font-weight="700">S</text>
+  </g>
+  <g transform="translate(104 474)">
+    <circle cx="0" cy="0" r="58" fill="#2cb9a4" />
+    <text x="-28" y="16" fill="#12161d" font-family="monospace" font-size="54" font-weight="700">P</text>
+  </g>
+  <g transform="translate(856 474)">
+    <circle cx="0" cy="0" r="58" fill="#f47f42" />
+    <text x="-28" y="16" fill="#12161d" font-family="monospace" font-size="54" font-weight="700">R</text>
+  </g>
+  <text x="76" y="532" fill="#fdf6e8" font-family="monospace" font-size="54" font-weight="700" letter-spacing="6">RPS ARENA</text>
+  <text x="78" y="568" fill="#2cb9a4" font-family="monospace" font-size="20" letter-spacing="4">BOT DUELS. QUICK MATCHES. TOURNAMENT BRACKETS.</text>
+</svg>

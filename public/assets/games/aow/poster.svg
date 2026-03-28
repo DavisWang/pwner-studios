@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Age of War poster</title>
+  <desc id="desc">A retro poster with towers, meteors, and a lane battlefield.</desc>
+  <defs>
+    <linearGradient id="night" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#10223b" />
+      <stop offset="100%" stop-color="#090d17" />
+    </linearGradient>
+    <linearGradient id="earth" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7f5f3b" />
+      <stop offset="100%" stop-color="#3b2718" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#night)" />
+  <circle cx="770" cy="122" r="78" fill="#7fc9ff" fill-opacity="0.18" />
+  <path d="M668 48 730 110" stroke="#f4d08a" stroke-width="12" stroke-linecap="round" />
+  <path d="M726 30 810 114" stroke="#f0b15d" stroke-width="18" stroke-linecap="round" />
+  <path d="M810 62 880 132" stroke="#f4d08a" stroke-width="12" stroke-linecap="round" />
+  <rect y="386" width="960" height="214" fill="url(#earth)" />
+  <rect x="0" y="364" width="960" height="36" fill="#4b3a29" />
+  <g transform="translate(110 180)">
+    <rect x="64" y="82" width="92" height="166" fill="#c7894a" />
+    <rect x="44" y="112" width="132" height="42" fill="#f4d08a" />
+    <rect y="248" width="232" height="126" fill="#221713" />
+    <path d="M18 326h82M18 294h52" stroke="#7fc9ff" stroke-width="16" />
+  </g>
+  <g transform="translate(560 300)">
+    <rect x="0" y="72" width="260" height="18" rx="9" fill="#f4d08a" fill-opacity="0.3" />
+    <path d="M20 58h46v58H20zM102 42h58v74h-58zM198 28h40v88h-40z" fill="#f0b15d" />
+    <path d="M264 12h58v104h-58z" fill="#7fc9ff" />
+  </g>
+  <text x="82" y="532" fill="#fdf6df" font-family="monospace" font-size="54" font-weight="700" letter-spacing="6">AGE OF WAR</text>
+  <text x="82" y="568" fill="#7fc9ff" font-family="monospace" font-size="20" letter-spacing="4">PREHISTORIC LANE BATTLES. TOWERS. METEORS.</text>
+</svg>

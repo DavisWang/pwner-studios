@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Burn the Village poster</title>
+  <desc id="desc">A retro poster with a burning barn, grid tiles, and ember glow.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#120d09" />
+      <stop offset="100%" stop-color="#2e1710" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a321a" />
+      <stop offset="100%" stop-color="#29140a" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#sky)" />
+  <g opacity="0.2">
+    <path d="M0 420h960" stroke="#3e2315" stroke-width="12" />
+    <path d="M0 470h960" stroke="#3e2315" stroke-width="12" />
+    <path d="M0 520h960" stroke="#3e2315" stroke-width="12" />
+    <path d="M140 320v280M220 320v280M300 320v280M380 320v280M460 320v280M540 320v280M620 320v280M700 320v280M780 320v280" stroke="#3e2315" stroke-width="8" />
+  </g>
+  <rect y="360" width="960" height="240" fill="url(#ground)" />
+  <g transform="translate(160 166)">
+    <path d="M0 240h248l-28-152H28z" fill="#885431" />
+    <path d="M-18 88 124 -88 264 88Z" fill="#d0552f" />
+    <path d="M58 78c0-46 42-90 42-144 38 36 68 70 68 128 0 58-38 90-86 90-22 0-24-42-24-74Z" fill="#fff27a" />
+    <path d="M184 126c-14 18-34 34-60 34-12 0-24-8-30-18 18 0 28-10 28-28 0-22 12-40 30-62 8 16 18 40 32 74Z" fill="#ff9d4b" />
+  </g>
+  <g transform="translate(620 116)">
+    <circle cx="86" cy="70" r="80" fill="#ff7a35" fill-opacity="0.12" />
+    <path d="M0 176h180v180H0z" fill="#201512" stroke="#ff7a35" stroke-width="8" />
+    <path d="M40 264h100M40 308h68M40 220h84" stroke="#fff27a" stroke-width="16" />
+    <path d="M118 60 154 94 118 128 84 94Z" fill="#ffbf57" stroke="#fff27a" stroke-width="8" />
+    <path d="M214 28 242 56 214 84 186 56Z" fill="#ff7a35" stroke="#fff27a" stroke-width="8" />
+  </g>
+  <text x="80" y="538" fill="#fff6d3" font-family="monospace" font-size="54" font-weight="700" letter-spacing="6">BURN THE VILLAGE</text>
+  <text x="82" y="572" fill="#ffbf57" font-family="monospace" font-size="20" letter-spacing="4">CHAIN REACTIONS. TINY MAPS. MAXIMUM DAMAGE.</text>
+</svg>
