@@ -28,3 +28,17 @@
 - Replaced Diggr's flat grass preview card with a new poster assembled from the current shipped sprite sheets.
 - Swapped the Diggr detail media from the older upgrade-sheet choice to the current consumable shop contact sheet.
 - Verified with `npm run verify`, including regression coverage for the Diggr poster and detail media asset paths.
+
+## Diggr Title Card Update
+
+### Plan
+
+- [x] Inspect the current Diggr tile asset and confirm where the poster is sourced from
+- [x] Replace the Diggr tile art so it matches the provided title-screen composition
+- [x] Verify the updated poster path and production build
+
+### Review
+
+- Replaced the Diggr tile poster with a title-screen style card that matches the provided reference composition.
+- Updated the Diggr alt text and poster regression check so the tile still points at `poster.svg`.
+- Verified with `npm run verify`.

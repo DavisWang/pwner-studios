@@ -64,7 +64,7 @@ describe('App', () => {
 
     render(<App />);
 
-    expect(screen.getByAltText(/diggr poster built from current sprite sheets/i)).toHaveAttribute(
+    expect(screen.getByAltText(/diggr title card showing the game logo, menu buttons, and a mine preview panel/i)).toHaveAttribute(
       'src',
       expect.stringContaining('/assets/games/diggr/poster.svg')
     );

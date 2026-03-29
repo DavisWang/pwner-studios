@@ -21,7 +21,7 @@ export const studioGames: GameEntry[] = [
       'It already has upgrades, consumables, refining, and local save support, so it reads like the start of a real mining RPG instead of a one-screen tech demo.'
     ],
     cardImage: asset('assets/games/diggr/poster.svg'),
-    cardAlt: 'Diggr poster built from current sprite sheets showing the surface, terrain, digger, and upgrade icons.',
+    cardAlt: 'Diggr title card showing the game logo, menu buttons, and a mine preview panel.',
     detailMedia: [
       {
         src: asset('assets/games/diggr/consumable-shop-sprite-contact-sheet.png'),
