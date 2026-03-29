@@ -5,7 +5,7 @@ Pwner Studios is a static `Vite + React + TypeScript` landing page for Davis Wan
 ## What ships
 
 - single-page studio homepage
-- four featured games with local content data
+- featured games with local content data
 - hash-driven detail panel for each game
 - GitHub Pages deploy workflow for the `/pwner-studios/` project path
 

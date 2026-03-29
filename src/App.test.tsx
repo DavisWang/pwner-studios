@@ -8,6 +8,8 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { level: 1, name: /retro browser games with early 2000 nostalgia/i })).toBeInTheDocument();
     expect(screen.queryByText(/puzzle, combat, and bot-sim projects built for the browser/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/5 published builds/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /open diggr details/i })).toBeInTheDocument();
   });
 
   it('opens the matching detail dialog from the URL hash on first render', () => {
@@ -54,5 +56,16 @@ describe('App', () => {
       'href',
       'https://github.com/DavisWang/rps-arena'
     );
+  });
+
+  it('opens Diggr with the published live and repo links', async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: /open diggr details/i }));
+
+    expect(screen.getByRole('link', { name: /play game/i })).toHaveAttribute('href', 'https://daviswang.github.io/diggr/');
+    expect(screen.getByRole('link', { name: /view repo/i })).toHaveAttribute('href', 'https://github.com/DavisWang/diggr');
   });
 });

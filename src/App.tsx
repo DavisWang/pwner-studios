@@ -28,6 +28,7 @@ function App() {
   const lastTriggerRef = useRef<HTMLButtonElement | null>(null);
   const cardRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const selectedGame = studioGames.find((game) => game.slug === selectedSlug) ?? null;
+  const marqueeGames = [...studioGames, ...studioGames];
 
   const syncFromHash = useEffectEvent(() => {
     startTransition(() => {
@@ -156,21 +157,16 @@ function App() {
 
           <div className="hero__marquee" aria-hidden="true">
             <div className="hero__marquee-track">
-              <span>Burn the Village</span>
-              <span>Dots</span>
-              <span>Age of War</span>
-              <span>RPS Arena</span>
-              <span>Burn the Village</span>
-              <span>Dots</span>
-              <span>Age of War</span>
-              <span>RPS Arena</span>
+              {marqueeGames.map((game, index) => (
+                <span key={`${game.slug}-${index}`}>{game.title}</span>
+              ))}
             </div>
           </div>
 
           <div className="hero__stats" aria-label="Studio stats">
             <article className="stat-card">
               <span>Lineup</span>
-              <strong>4 shipped builds</strong>
+              <strong>{studioGames.length} published builds</strong>
             </article>
             <article className="stat-card">
               <span>Modes</span>

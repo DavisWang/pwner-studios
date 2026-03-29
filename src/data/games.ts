@@ -126,5 +126,37 @@ export const studioGames: GameEntry[] = [
       glow: 'rgba(44, 185, 164, 0.3)',
       surface: '#1b1a1c'
     }
+  },
+  {
+    slug: 'diggr',
+    title: 'Diggr',
+    tagline: 'Dig down, manage fuel, and haul ore back to the surface before the run turns against you.',
+    status: 'Published prototype',
+    genre: 'Mining RPG prototype',
+    stack: 'Phaser + TypeScript',
+    fact: 'Chunked mining + surface shops',
+    repoUrl: 'https://github.com/DavisWang/diggr',
+    liveUrl: 'https://daviswang.github.io/diggr/',
+    detailCopy: [
+      'Diggr is a desktop-first digging prototype built around deterministic chunked world generation and timed drilling.',
+      'The run loop mixes gravity, fuel burn, lava damage, ore hauling, and full-cargo tradeoffs with a surface economy layer.',
+      'It already has upgrades, consumables, refining, and local save support, so it reads like the start of a real mining RPG instead of a one-screen tech demo.'
+    ],
+    cardImage: asset('assets/games/diggr/grassy-ground-preview.png'),
+    cardAlt: 'Diggr terrain preview showing grassy surface tiles over a layered underground map.',
+    detailMedia: [
+      {
+        src: asset('assets/games/diggr/upgrade-shop-sprite-contact-sheet.png'),
+        alt: 'Diggr upgrade shop sprite contact sheet.',
+        caption: 'Shipped shop sprite sheet from the repo docs.',
+        frame: 'pixel'
+      }
+    ],
+    accent: {
+      primary: '#79bb5c',
+      secondary: '#e4b54d',
+      glow: 'rgba(121, 187, 92, 0.32)',
+      surface: '#152117'
+    }
   }
 ];
