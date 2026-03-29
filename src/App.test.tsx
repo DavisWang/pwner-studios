@@ -64,6 +64,11 @@ describe('App', () => {
 
     render(<App />);
 
+    expect(screen.getByAltText(/diggr poster built from current sprite sheets/i)).toHaveAttribute(
+      'src',
+      expect.stringContaining('/assets/games/diggr/poster.svg')
+    );
+
     await user.click(screen.getByRole('button', { name: /open diggr details/i }));
 
     const dialog = screen.getByRole('dialog', { name: /diggr/i });
@@ -71,5 +76,9 @@ describe('App', () => {
     expect(within(dialog).getByText(/playable now/i)).toBeInTheDocument();
     expect(within(dialog).getByRole('link', { name: /play game/i })).toHaveAttribute('href', 'https://daviswang.github.io/diggr/');
     expect(within(dialog).getByRole('link', { name: /view repo/i })).toHaveAttribute('href', 'https://github.com/DavisWang/diggr');
+    expect(within(dialog).getByAltText(/diggr consumable shop sprite contact sheet/i)).toHaveAttribute(
+      'src',
+      expect.stringContaining('/assets/games/diggr/consumable-shop-sprite-contact-sheet.png')
+    );
   });
 });

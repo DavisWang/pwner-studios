@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Diggr poster</title>
+  <desc id="desc">A retro poster built from Diggr sprite sheets showing the surface shops, layered terrain, the digger, and upgrade icons.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#11201a" />
+      <stop offset="100%" stop-color="#0a0f0e" />
+    </linearGradient>
+    <linearGradient id="cave" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d3a1f" />
+      <stop offset="100%" stop-color="#24160d" />
+    </linearGradient>
+    <linearGradient id="frame" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7fcf63" />
+      <stop offset="100%" stop-color="#d6a640" />
+    </linearGradient>
+    <clipPath id="surface-clip">
+      <rect x="70" y="72" width="330" height="146" rx="18" />
+    </clipPath>
+    <clipPath id="terrain-clip">
+      <rect x="70" y="236" width="330" height="210" rx="18" />
+    </clipPath>
+    <clipPath id="digger-clip">
+      <rect x="454" y="90" width="436" height="292" rx="20" />
+    </clipPath>
+    <clipPath id="icons-clip">
+      <rect x="454" y="404" width="436" height="116" rx="20" />
+    </clipPath>
+  </defs>
+  <rect width="960" height="600" fill="url(#sky)" />
+  <circle cx="774" cy="118" r="96" fill="#79bb5c" fill-opacity="0.12" />
+  <circle cx="196" cy="128" r="82" fill="#e4b54d" fill-opacity="0.12" />
+  <rect y="196" width="960" height="404" fill="url(#cave)" />
+  <g opacity="0.12" stroke="#c4954c" stroke-width="6">
+    <path d="M0 246h960M0 306h960M0 366h960M0 426h960M0 486h960" />
+  </g>
+  <g fill="#0f1412" stroke="url(#frame)" stroke-width="8">
+    <rect x="70" y="72" width="330" height="146" rx="18" />
+    <rect x="70" y="236" width="330" height="210" rx="18" />
+    <rect x="454" y="90" width="436" height="292" rx="20" />
+    <rect x="454" y="404" width="436" height="116" rx="20" />
+  </g>
+  <g clip-path="url(#surface-clip)">
+    <rect x="70" y="72" width="330" height="146" fill="#162319" />
+    <image href="surface-shops.png" x="92" y="78" width="286" height="143" preserveAspectRatio="xMidYMid meet" style="image-rendering: pixelated;" />
+  </g>
+  <g clip-path="url(#terrain-clip)">
+    <rect x="70" y="236" width="330" height="210" fill="#1b1612" />
+    <image href="terrain-sheet.png" x="92" y="214" width="286" height="358" preserveAspectRatio="xMidYMid meet" style="image-rendering: pixelated;" />
+  </g>
+  <g clip-path="url(#digger-clip)">
+    <rect x="454" y="90" width="436" height="292" fill="#131816" />
+    <rect x="478" y="114" width="388" height="244" rx="16" fill="#0b100f" stroke="#20382a" stroke-width="4" />
+    <image href="digger-sheet.png" x="524" y="136" width="300" height="240" preserveAspectRatio="xMidYMid meet" style="image-rendering: pixelated;" />
+  </g>
+  <g clip-path="url(#icons-clip)">
+    <rect x="454" y="404" width="436" height="116" fill="#141412" />
+    <image href="upgrade-shop-icons.png" x="600" y="402" width="144" height="144" preserveAspectRatio="xMidYMid meet" style="image-rendering: pixelated;" />
+  </g>
+  <text x="94" y="102" fill="#eaf6db" font-family="monospace" font-size="18" font-weight="700" letter-spacing="3">SURFACE</text>
+  <text x="94" y="266" fill="#eaf6db" font-family="monospace" font-size="18" font-weight="700" letter-spacing="3">TERRAIN</text>
+  <text x="478" y="122" fill="#eaf6db" font-family="monospace" font-size="18" font-weight="700" letter-spacing="3">DIGGER</text>
+  <text x="478" y="434" fill="#eaf6db" font-family="monospace" font-size="18" font-weight="700" letter-spacing="3">UPGRADES</text>
+  <text x="72" y="530" fill="#f4f0df" font-family="monospace" font-size="58" font-weight="700" letter-spacing="6">DIGGR</text>
+  <text x="74" y="566" fill="#e4b54d" font-family="monospace" font-size="20" letter-spacing="4">DIG DEEP. MANAGE FUEL. CASH OUT.</text>
+</svg>

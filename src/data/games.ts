@@ -20,13 +20,13 @@ export const studioGames: GameEntry[] = [
       'The run loop mixes gravity, fuel burn, lava damage, ore hauling, and full-cargo tradeoffs with a surface economy layer.',
       'It already has upgrades, consumables, refining, and local save support, so it reads like the start of a real mining RPG instead of a one-screen tech demo.'
     ],
-    cardImage: asset('assets/games/diggr/grassy-ground-preview.png'),
-    cardAlt: 'Diggr terrain preview showing grassy surface tiles over a layered underground map.',
+    cardImage: asset('assets/games/diggr/poster.svg'),
+    cardAlt: 'Diggr poster built from current sprite sheets showing the surface, terrain, digger, and upgrade icons.',
     detailMedia: [
       {
-        src: asset('assets/games/diggr/upgrade-shop-sprite-contact-sheet.png'),
-        alt: 'Diggr upgrade shop sprite contact sheet.',
-        caption: 'Shipped shop sprite sheet from the repo docs.',
+        src: asset('assets/games/diggr/consumable-shop-sprite-contact-sheet.png'),
+        alt: 'Diggr consumable shop sprite contact sheet.',
+        caption: 'Current consumable shop sprite sheet from the repo docs.',
         frame: 'pixel'
       }
     ],
