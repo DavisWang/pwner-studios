@@ -66,7 +66,7 @@ describe('App', () => {
 
     expect(screen.getByAltText(/diggr title card showing the game logo, menu buttons, and a mine preview panel/i)).toHaveAttribute(
       'src',
-      expect.stringContaining('/assets/games/diggr/poster.svg')
+      expect.stringContaining('/assets/games/diggr/diggr-tile.png')
     );
 
     await user.click(screen.getByRole('button', { name: /open diggr details/i }));

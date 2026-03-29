@@ -42,3 +42,17 @@
 - Replaced the Diggr tile poster with a title-screen style card that matches the provided reference composition.
 - Updated the Diggr alt text and poster regression check so the tile still points at `poster.svg`.
 - Verified with `npm run verify`.
+
+## Diggr Exact Tile Asset
+
+### Plan
+
+- [x] Copy the provided Desktop Diggr tile image into the workspace
+- [x] Point the Diggr card at the exact bitmap instead of the recreated SVG poster
+- [x] Verify the updated asset path and production build
+
+### Review
+
+- Copied the provided Desktop image into the workspace as the Diggr tile asset.
+- Swapped Diggr off the recreated SVG poster and onto the exact PNG file.
+- Verified with `npm run verify`.
