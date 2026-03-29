@@ -55,7 +55,6 @@ function App() {
 
     if (window.location.hash !== `#${slug}`) {
       window.location.hash = slug;
-      return;
     }
 
     startTransition(() => {
