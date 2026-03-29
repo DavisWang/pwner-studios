@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
@@ -10,6 +10,7 @@ describe('App', () => {
     expect(screen.queryByText(/puzzle, combat, and bot-sim projects built for the browser/i)).not.toBeInTheDocument();
     expect(screen.getByText(/5 published builds/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /open diggr details/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /open .* details/i })[0]).toHaveAccessibleName(/open diggr details/i);
   });
 
   it('opens the matching detail dialog from the URL hash on first render', () => {
@@ -65,7 +66,10 @@ describe('App', () => {
 
     await user.click(screen.getByRole('button', { name: /open diggr details/i }));
 
-    expect(screen.getByRole('link', { name: /play game/i })).toHaveAttribute('href', 'https://daviswang.github.io/diggr/');
-    expect(screen.getByRole('link', { name: /view repo/i })).toHaveAttribute('href', 'https://github.com/DavisWang/diggr');
+    const dialog = screen.getByRole('dialog', { name: /diggr/i });
+
+    expect(within(dialog).getByText(/playable now/i)).toBeInTheDocument();
+    expect(within(dialog).getByRole('link', { name: /play game/i })).toHaveAttribute('href', 'https://daviswang.github.io/diggr/');
+    expect(within(dialog).getByRole('link', { name: /view repo/i })).toHaveAttribute('href', 'https://github.com/DavisWang/diggr');
   });
 });
