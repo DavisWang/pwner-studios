@@ -56,3 +56,17 @@
 - Copied the provided Desktop image into the workspace as the Diggr tile asset.
 - Swapped Diggr off the recreated SVG poster and onto the exact PNG file.
 - Verified with `npm run verify`.
+
+## Diggr Poster Push
+
+### Plan
+
+- [x] Inspect the local Diggr asset changes that were not yet in the deployed build
+- [x] Point the Diggr card at the newer local poster asset
+- [x] Verify and push the updated Diggr tile
+
+### Review
+
+- Found a newer local Diggr poster asset already present in the repo but not wired into the content model.
+- Switched the Diggr card back to `poster.svg`, which now wraps the new `diggr-pwner-poster.png` bitmap.
+- Verified with `npm run verify` before pushing.

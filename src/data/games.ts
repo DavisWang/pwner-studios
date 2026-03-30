@@ -20,8 +20,8 @@ export const studioGames: GameEntry[] = [
       'The run loop mixes gravity, fuel burn, lava damage, ore hauling, and full-cargo tradeoffs with a surface economy layer.',
       'It already has upgrades, consumables, refining, and local save support, so it reads like the start of a real mining RPG instead of a one-screen tech demo.'
     ],
-    cardImage: asset('assets/games/diggr/diggr-tile.png'),
-    cardAlt: 'Diggr title card showing the game logo, menu buttons, and a mine preview panel.',
+    cardImage: asset('assets/games/diggr/poster.svg'),
+    cardAlt: 'Diggr promotional poster showing the digger over a mine shaft, surface shops, and underground hazards.',
     detailMedia: [
       {
         src: asset('assets/games/diggr/consumable-shop-sprite-contact-sheet.png'),
