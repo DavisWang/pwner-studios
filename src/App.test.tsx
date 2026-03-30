@@ -66,7 +66,7 @@ describe('App', () => {
 
     expect(screen.getByAltText(/diggr promotional poster showing the digger over a mine shaft, surface shops, and underground hazards/i)).toHaveAttribute(
       'src',
-      expect.stringContaining('/assets/games/diggr/poster.svg')
+      expect.stringContaining('/assets/games/diggr/diggr-pwner-poster.png')
     );
 
     await user.click(screen.getByRole('button', { name: /open diggr details/i }));

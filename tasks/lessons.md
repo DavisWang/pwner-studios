@@ -7,3 +7,4 @@
 - When the user provides exact reference art for a portfolio tile, match that composition directly instead of substituting a synthetic poster concept.
 - When the user provides the source asset file path, copy that asset into the workspace and wire it directly before attempting any recreation or screenshot-based workaround.
 - Before pushing an asset update, check for newer local files already added in the repo and make sure the content model actually points at them.
+- Do not wrap raster tile art in an SVG for card rendering unless you have verified the embedded image resolves in production. Prefer pointing the card directly at the bitmap asset.

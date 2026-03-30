@@ -70,3 +70,17 @@
 - Found a newer local Diggr poster asset already present in the repo but not wired into the content model.
 - Switched the Diggr card back to `poster.svg`, which now wraps the new `diggr-pwner-poster.png` bitmap.
 - Verified with `npm run verify` before pushing.
+
+## Diggr Poster Render Fix
+
+### Plan
+
+- [x] Inspect the live Diggr tile wiring and identify why the new poster was not rendering
+- [x] Point the Diggr card directly at the `diggr-pwner-poster.png` bitmap instead of the SVG wrapper
+- [x] Verify and push the render fix
+
+### Review
+
+- Confirmed the Diggr card was pointing at `poster.svg`, not directly at `diggr-pwner-poster.png`.
+- Switched the card to the bitmap asset directly so production no longer depends on an embedded image inside an external SVG.
+- Verified with `npm run verify`.
