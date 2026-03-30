@@ -8,17 +8,17 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'diggr',
     title: 'Diggr',
-    tagline: 'Dig down, manage fuel, and haul ore back to the surface before the run turns against you.',
+    tagline: 'Drill for ores, sell for cash, upgrade your digger and explore the underground.',
     status: 'Playable now',
-    genre: 'Mining RPG prototype',
-    stack: 'Phaser + TypeScript',
-    fact: 'Chunked mining + surface shops',
+    genre: 'Mining adventure',
+    stack: 'Single-player',
+    fact: 'Sell ore, upgrade, go deeper',
     repoUrl: 'https://github.com/DavisWang/diggr',
     liveUrl: 'https://daviswang.github.io/diggr/',
     detailCopy: [
-      'Diggr is a desktop-first digging prototype built around deterministic chunked world generation and timed drilling.',
-      'The run loop mixes gravity, fuel burn, lava damage, ore hauling, and full-cargo tradeoffs with a surface economy layer.',
-      'It already has upgrades, consumables, refining, and local save support, so it reads like the start of a real mining RPG instead of a one-screen tech demo.'
+      'Diggr is a mining adventure about heading underground, hauling back what you can, and pushing a little deeper on the next run.',
+      'Every trip is a gamble between greed and survival as you manage fuel, dodge hazards, and decide when it is time to head back.',
+      'Control your digger, sell ores for cash, and upgrade it to see how deep you can go.'
     ],
     cardImage: asset('assets/games/diggr/diggr-pwner-poster.png'),
     cardAlt: 'Diggr promotional poster showing the digger over a mine shaft, surface shops, and underground hazards.',
@@ -26,7 +26,7 @@ export const studioGames: GameEntry[] = [
       {
         src: asset('assets/games/diggr/consumable-shop-sprite-contact-sheet.png'),
         alt: 'Diggr consumable shop sprite contact sheet.',
-        caption: 'Current consumable shop sprite sheet from the repo docs.',
+        caption: 'A look at the shop where you stock up before the next run.',
         frame: 'pixel'
       }
     ],
@@ -40,17 +40,17 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'burn-the-village',
     title: 'Burn the Village',
-    tagline: 'Route fire, place TNT, and turn a tiny 32x32 map into a chain reaction.',
+    tagline: 'Lay hay, place TNT, and turn a tiny village into a perfectly planned chain reaction.',
     status: 'Playable now',
     genre: 'Puzzle tactics',
-    stack: 'Phaser + TypeScript',
-    fact: '20 campaign levels',
+    stack: 'Single-player',
+    fact: '20 levels + level editor',
     repoUrl: 'https://github.com/DavisWang/burn-the-village',
     liveUrl: 'https://daviswang.github.io/burn-the-village/',
     detailCopy: [
-      'A fixed-frame pixel tactics game built around efficient destruction.',
-      'Every run is about laying hay, routing the burn path, and using TNT without wasting tiles or time.',
-      'It already ships the full campaign, a level editor, and a dense little board language that feels like an old shareware puzzle disc.'
+      'Burn the Village is a tight puzzle game about setting up the cleanest possible destruction run.',
+      'You place hay, trigger TNT, work around terrain, and try to destroy enough structures without wasting resources.',
+      'With 20 campaign levels, a full level editor, and tight score and resource pressure, there is plenty here to master once you start chasing cleaner runs.'
     ],
     cardImage: asset('assets/games/burn-the-village/poster.svg'),
     cardAlt: 'Poster art for Burn the Village with flames and a barn silhouette.',
@@ -59,7 +59,7 @@ export const studioGames: GameEntry[] = [
       {
         src: asset('assets/games/burn-the-village/icon.svg'),
         alt: 'Burn the Village icon showing a burning barn.',
-        caption: 'Shipped favicon from the game build.',
+        caption: 'The barn-and-flames icon used for the game.',
         frame: 'icon'
       }
     ],
@@ -73,17 +73,17 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'dots',
     title: 'Dots',
-    tagline: 'Connect every pair, fill every cell, and never cross the wrong line.',
+    tagline: 'Connect every pair, fill every open cell, and solve the whole board cleanly.',
     status: 'Playable now',
     genre: 'Logic puzzle',
-    stack: 'React + TypeScript',
-    fact: '20 deterministic boards',
+    stack: 'Touch-friendly',
+    fact: '100 escalating levels',
     repoUrl: 'https://github.com/DavisWang/dots',
     liveUrl: 'https://daviswang.github.io/dots/',
     detailCopy: [
-      'A touch-first browser puzzle game with walls, bridges, and full-board coverage rules.',
-      'The puzzle set is deterministic on purpose, which makes the experience feel curated instead of endlessly generated.',
-      'The shipped level solutions are part of the project itself, so the art here is pulled straight from those exported review boards.'
+      'Dots is a clean, pick-up-and-play puzzle game that starts simple and keeps getting trickier.',
+      'Walls and bridges force you to think ahead, because one messy route can ruin an almost finished board.',
+      'With 100 levels of increasing difficulty, there is always another board waiting to make you rethink your approach.'
     ],
     cardImage: asset('assets/games/dots/level-08.png'),
     cardAlt: 'Solved Dots puzzle board with colored routes across a square grid.',
@@ -91,7 +91,7 @@ export const studioGames: GameEntry[] = [
       {
         src: asset('assets/games/dots/level-19.png'),
         alt: 'Second solved Dots board with a denser route layout.',
-        caption: 'Another shipped puzzle solution export.',
+        caption: 'One of the later boards once the routes start getting tight.',
         frame: 'pixel'
       }
     ],
@@ -105,17 +105,17 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'aow',
     title: 'Age of War',
-    tagline: 'A prehistoric lane battler rebuilt as a browser vertical slice.',
-    status: 'Vertical slice',
-    genre: 'Lane battle RTS',
-    stack: 'Phaser + TypeScript',
-    fact: 'Prehistoric era only',
+    tagline: 'Train units, build towers, age up through five eras, and crush the enemy base before they crush yours.',
+    status: 'Playable now',
+    genre: 'Lane battle strategy',
+    stack: 'Single-player',
+    fact: '5 ages, towers, and supers',
     repoUrl: 'https://github.com/DavisWang/aow',
     liveUrl: 'https://daviswang.github.io/aow/',
     detailCopy: [
-      'This is a focused remake of the original flash-game loop: base versus base, unit buys, tower slots, and a super ability.',
-      'The current build keeps scope intentionally tight so the lane combat and camera movement feel right before expanding into later ages.',
-      'It is rougher than the fully shipped puzzle games, but the structure is already there and the fantasy is clear immediately.'
+      'Age of War is a fast lane battler where every match is a push and pull between building your army, holding the line, and timing your next leap forward.',
+      'You buy units, place towers, unlock stronger eras, and look for the moment when one smart upgrade can swing the whole battlefield.',
+      'From prehistoric brawls to futuristic firepower, the fun is in surviving long enough to evolve, hit a stronger age, and roll over the enemy with a bigger war machine.'
     ],
     cardImage: asset('assets/games/aow/poster.svg'),
     cardAlt: 'Poster art for Age of War with a tower, battlefield lane, and meteor streaks.',
@@ -124,7 +124,7 @@ export const studioGames: GameEntry[] = [
       {
         src: asset('assets/games/aow/icon.svg'),
         alt: 'Age of War icon showing a tower over a dirt battlefield.',
-        caption: 'Shipped favicon from the current vertical slice.',
+        caption: 'The tower emblem used for the game.',
         frame: 'icon'
       }
     ],
@@ -138,17 +138,17 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'rps-arena',
     title: 'RPS Arena',
-    tagline: 'Seeded bots, imported bots, quick matches, and tournament brackets in the browser.',
+    tagline: 'Import bots, run quick matches or full brackets, and see whose strategy actually wins.',
     status: 'Playable now',
-    genre: 'Simulation sandbox',
-    stack: 'React + TypeScript',
-    fact: 'Bot tournaments + IndexedDB',
+    genre: 'Bot battle sandbox',
+    stack: 'Quick matches + brackets',
+    fact: 'Custom bots + tournaments',
     repoUrl: 'https://github.com/DavisWang/rps-arena',
     liveUrl: 'https://daviswang.github.io/rps-arena/',
     detailCopy: [
-      'A browser arena for running Rock Paper Scissors bots against each other without freezing the UI.',
-      'Quick matches are fast to set up, while tournament mode gives the project a very different energy than the action and puzzle games.',
-      'The app already supports custom bot imports and persistent local history, so it feels more like a tiny tool than a one-screen toy.'
+      'RPS Arena turns rock paper scissors into a surprisingly competitive game of prediction, counterplay, and bracket survival.',
+      'Run a quick head-to-head, seed a bracket, or bring in your own bot and see how it handles the field.',
+      'What starts as rock paper scissors gets surprisingly addictive once different bot styles start baiting, punishing, and outlasting each other over a bracket run.'
     ],
     cardImage: asset('assets/games/rps-arena/poster.svg'),
     cardAlt: 'Poster art for RPS Arena with bracket lines and rock paper scissors symbols.',

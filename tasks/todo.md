@@ -84,3 +84,17 @@
 - Confirmed the Diggr card was pointing at `poster.svg`, not directly at `diggr-pwner-poster.png`.
 - Switched the card to the bitmap asset directly so production no longer depends on an embedded image inside an external SVG.
 - Verified with `npm run verify`.
+
+## Portfolio Copy Refresh
+
+### Plan
+
+- [x] Review the visible game-specific tile and detail strings in the content model
+- [x] Rewrite the copy to target players instead of developers
+- [x] Verify the landing page still builds and tests after the content update
+
+### Review
+
+- Reworked every game tile/detail string in `src/data/games.ts` to sell the player fantasy, challenge, and progression instead of implementation details.
+- Replaced the dev-facing secondary meta strings with player-facing labels while keeping the same data structure and UI.
+- Verified with `npm run verify`.
