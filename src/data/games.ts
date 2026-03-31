@@ -6,6 +6,38 @@ function asset(path: string) {
 
 export const studioGames: GameEntry[] = [
   {
+    slug: 'neon-blaster-x',
+    title: 'Neon Blaster X',
+    tagline: 'Blast ships apart, steal the wreckage, and rebuild yourself in the middle of the fight.',
+    status: 'Playable now',
+    genre: 'Salvage shooter',
+    stack: 'Builder + combat',
+    fact: 'Steal parts mid-fight',
+    repoUrl: 'https://github.com/DavisWang/neon-blaster-x',
+    liveUrl: 'https://daviswang.github.io/neon-blaster-x/',
+    detailCopy: [
+      'Neon Blaster X is a playable salvage shooter where every enemy ship is both a threat and a source of new parts.',
+      'Blast ships apart, grab the wreckage, and bolt it onto your hull in real time before the next fight closes in.',
+      'The fun is turning a tiny starter cockpit into a strange stolen war machine built from whatever you can rip off the field.'
+    ],
+    cardImage: asset('assets/games/neon-blaster-x/title-screen.png'),
+    cardAlt: 'Neon Blaster X title screen with the neon salvage shooter logo and menu.',
+    detailMedia: [
+      {
+        src: asset('assets/games/neon-blaster-x/builder-view.png'),
+        alt: 'Neon Blaster X ship builder view showing a custom purple ship and block palette.',
+        caption: 'The live ship builder where you drag parts onto the hull and test new builds.',
+        frame: 'pixel'
+      }
+    ],
+    accent: {
+      primary: '#6de3ff',
+      secondary: '#ff4f93',
+      glow: 'rgba(109, 227, 255, 0.32)',
+      surface: '#09121d'
+    }
+  },
+  {
     slug: 'diggr',
     title: 'Diggr',
     tagline: 'Drill for ores, sell for cash, upgrade your digger and explore the underground.',
@@ -105,27 +137,27 @@ export const studioGames: GameEntry[] = [
   {
     slug: 'aow',
     title: 'Age of War',
-    tagline: 'Train units, build towers, age up through five eras, and crush the enemy base before they crush yours.',
+    tagline: 'Train units, build towers, fire supers, and fight from the stone age to the future.',
     status: 'Playable now',
     genre: 'Lane battle strategy',
-    stack: 'Single-player',
-    fact: '5 ages, towers, and supers',
+    stack: 'Five-age ladder',
+    fact: 'Units, towers, and supers',
     repoUrl: 'https://github.com/DavisWang/aow',
     liveUrl: 'https://daviswang.github.io/aow/',
     detailCopy: [
-      'Age of War is a fast lane battler where every match is a push and pull between building your army, holding the line, and timing your next leap forward.',
-      'You buy units, place towers, unlock stronger eras, and look for the moment when one smart upgrade can swing the whole battlefield.',
-      'From prehistoric brawls to futuristic firepower, the fun is in surviving long enough to evolve, hit a stronger age, and roll over the enemy with a bigger war machine.'
+      'Age of War is a fast base-versus-base lane battler where every match is about building pressure, holding the line, and breaking the enemy base before they break yours.',
+      'You buy units, build towers, trigger supers, and age up across five eras, with each jump unlocking a stronger roster and a new way to take over the battlefield.',
+      'The full ladder now runs from cavemen to future war machines, so the payoff is surviving long enough to unleash the late-game army and watch the lane flip in your favor.'
     ],
-    cardImage: asset('assets/games/aow/poster.svg'),
-    cardAlt: 'Poster art for Age of War with a tower, battlefield lane, and meteor streaks.',
+    cardImage: asset('assets/games/aow/title-screen.png'),
+    cardAlt: 'Age of War title screen showing the five-age playable build and side-by-side era characters.',
     icon: asset('assets/games/aow/icon.svg'),
     detailMedia: [
       {
-        src: asset('assets/games/aow/icon.svg'),
-        alt: 'Age of War icon showing a tower over a dirt battlefield.',
-        caption: 'The tower emblem used for the game.',
-        frame: 'icon'
+        src: asset('assets/games/aow/battle-view.png'),
+        alt: 'Age of War battle view with tower controls, battlefield banner, and base lane.',
+        caption: 'Current battle view from the updated five-age playable build.',
+        frame: 'pixel'
       }
     ],
     accent: {

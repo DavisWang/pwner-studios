@@ -98,3 +98,35 @@
 - Reworked every game tile/detail string in `src/data/games.ts` to sell the player fantasy, challenge, and progression instead of implementation details.
 - Replaced the dev-facing secondary meta strings with player-facing labels while keeping the same data structure and UI.
 - Verified with `npm run verify`.
+
+## Age Of War Refresh
+
+### Plan
+
+- [x] Compare the current Age of War landing-page copy and media against the latest local `aow` repo state
+- [x] Refresh the Age of War tile/detail content and swap in current build imagery
+- [x] Verify the updated landing page in the browser and through `npm run verify`
+
+### Review
+
+- Updated the Age of War metadata and detail copy in `src/data/games.ts` to match the current five-age playable build instead of the older vertical-slice framing.
+- Replaced the stale tile poster with a cropped title-screen capture from the live local `aow` build and swapped the detail media from the old icon to a live battle-view capture.
+- Spot-checked the refreshed Age of War detail dialog in Chrome at `http://127.0.0.1:4188/pwner-studios/#aow`.
+- Verified with `npm run verify`.
+
+## Neon Blaster X Portfolio Entry
+
+### Plan
+
+- [x] Review the current `neon-blaster-x` repo state and gather live visuals from the local build
+- [x] Add a new Neon Blaster X portfolio entry at the top of the lineup with player-facing copy and current media
+- [x] Update ordering-sensitive tests and verify the landing page in-browser plus `npm run verify`
+
+### Review
+
+- Added a new top-of-lineup Neon Blaster X entry in `src/data/games.ts` with player-facing copy aimed at the salvage/combat fantasy instead of repo-language implementation notes.
+- Captured current local-build imagery from `http://127.0.0.1:4199/` and surfaced it as a title-screen tile plus builder/roster detail media under `public/assets/games/neon-blaster-x/`.
+- Updated `src/App.test.tsx` for the new lineup count/order and added a Neon-specific detail-dialog coverage path.
+- Followed up once the public game link existed by switching Neon Blaster X from repo-only to a live playable entry with a `Play game` action.
+- Spot-checked the new dialog in Chrome at `http://127.0.0.1:4188/pwner-studios/#neon-blaster-x`.
+- Verified with `npm run verify`.

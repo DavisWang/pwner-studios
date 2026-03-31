@@ -8,9 +8,9 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { level: 1, name: /retro browser games with early 2000 nostalgia/i })).toBeInTheDocument();
     expect(screen.queryByText(/puzzle, combat, and bot-sim projects built for the browser/i)).not.toBeInTheDocument();
-    expect(screen.getByText(/5 published builds/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /open diggr details/i })).toBeInTheDocument();
-    expect(screen.getAllByRole('button', { name: /open .* details/i })[0]).toHaveAccessibleName(/open diggr details/i);
+    expect(screen.getByText(/6 published builds/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /open neon blaster x details/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /open .* details/i })[0]).toHaveAccessibleName(/open neon blaster x details/i);
   });
 
   it('opens the matching detail dialog from the URL hash on first render', () => {
@@ -79,6 +79,35 @@ describe('App', () => {
     expect(within(dialog).getByAltText(/diggr consumable shop sprite contact sheet/i)).toHaveAttribute(
       'src',
       expect.stringContaining('/assets/games/diggr/consumable-shop-sprite-contact-sheet.png')
+    );
+  });
+
+  it('opens Neon Blaster X with the published live link and the new media set', async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+
+    expect(screen.getByAltText(/neon blaster x title screen with the neon salvage shooter logo and menu/i)).toHaveAttribute(
+      'src',
+      expect.stringContaining('/assets/games/neon-blaster-x/title-screen.png')
+    );
+
+    await user.click(screen.getByRole('button', { name: /open neon blaster x details/i }));
+
+    const dialog = screen.getByRole('dialog', { name: /neon blaster x/i });
+
+    expect(within(dialog).getByText(/playable now/i)).toBeInTheDocument();
+    expect(within(dialog).getByRole('link', { name: /play game/i })).toHaveAttribute(
+      'href',
+      'https://daviswang.github.io/neon-blaster-x/'
+    );
+    expect(within(dialog).getByRole('link', { name: /view repo/i })).toHaveAttribute(
+      'href',
+      'https://github.com/DavisWang/neon-blaster-x'
+    );
+    expect(within(dialog).getByAltText(/neon blaster x ship builder view showing a custom purple ship and block palette/i)).toHaveAttribute(
+      'src',
+      expect.stringContaining('/assets/games/neon-blaster-x/builder-view.png')
     );
   });
 });

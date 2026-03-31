@@ -9,3 +9,6 @@
 - Before pushing an asset update, check for newer local files already added in the repo and make sure the content model actually points at them.
 - Do not wrap raster tile art in an SVG for card rendering unless you have verified the embedded image resolves in production. Prefer pointing the card directly at the bitmap asset.
 - Portfolio tile/detail copy should speak to players first: sell the fantasy, challenge, and payoff, and avoid dev-facing implementation details or self-limiting phrases like `prototype`, `rough`, or `early build`.
+- When a portfolio game has advanced materially, refresh both the copy and the surfaced tile/detail imagery against the current game build; do not leave older placeholder art or outdated scope claims in place.
+- When local repo screenshots look stale or uncertain, capture fresh portfolio media from the live local build instead of assuming the exported `output/` artifacts are current.
+- New portfolio entries should match the information density of the existing lineup. Do not give one game a longer detail view than the others unless the user explicitly asks for it.
