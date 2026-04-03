@@ -70,6 +70,63 @@ export const studioGames: GameEntry[] = [
     }
   },
   {
+    slug: 'nigiri-td',
+    title: 'Nigiri TD',
+    tagline: 'Seat hungry animals along the belt and eat every plate of nigiri before it reaches the trash.',
+    status: 'Playable now',
+    genre: 'Tower defense',
+    stack: 'Canvas · ES modules',
+    fact: '10 rounds · 4 conveyor maps',
+    repoUrl: 'https://github.com/DavisWang/nigiri-td',
+    liveUrl: 'https://daviswang.github.io/nigiri-td/',
+    detailCopy: [
+      'Nigiri TD is a canvas tower defense game set on a kaiten-style conveyor: plates spawn at the kitchen, roll toward the bin, and your job is to stop them with towers that are very motivated to eat sushi.',
+      'Between waves you place and upgrade animal towers, preview what is coming, and manage money and lives across ten rounds on four different belt layouts—including forks, spirals, and trickier paths.',
+      'It is vanilla JavaScript (ES modules), no framework, with pointer-driven controls and a touch-friendly layout on phones and tablets; audio stays muted until the player turns it on.'
+    ],
+    cardImage: asset('assets/games/nigiri-td/poster.svg'),
+    cardAlt: 'Nigiri TD poster with conveyor belt and in-game sprites: cat tower and salmon nigiri.',
+    accent: {
+      primary: '#E74C3C',
+      secondary: '#F1C40F',
+      glow: 'rgba(231, 76, 60, 0.32)',
+      surface: '#2a221c'
+    }
+  },
+  {
+    slug: 'aow',
+    title: 'Age of War',
+    tagline: 'Train units, build towers, fire supers, and fight from the stone age to the future.',
+    status: 'Playable now',
+    genre: 'Lane battle strategy',
+    stack: 'Five-age ladder',
+    fact: 'Units, towers, and supers',
+    repoUrl: 'https://github.com/DavisWang/aow',
+    liveUrl: 'https://daviswang.github.io/aow/',
+    detailCopy: [
+      'Age of War is a fast base-versus-base lane battler where every match is about building pressure, holding the line, and breaking the enemy base before they break yours.',
+      'You buy units, build towers, trigger supers, and age up across five eras, with each jump unlocking a stronger roster and a new way to take over the battlefield.',
+      'The full ladder now runs from cavemen to future war machines, so the payoff is surviving long enough to unleash the late-game army and watch the lane flip in your favor.'
+    ],
+    cardImage: asset('assets/games/aow/title-screen.png'),
+    cardAlt: 'Age of War title screen showing the five-age playable build and side-by-side era characters.',
+    icon: asset('assets/games/aow/icon.svg'),
+    detailMedia: [
+      {
+        src: asset('assets/games/aow/battle-view.png'),
+        alt: 'Age of War battle view with tower controls, battlefield banner, and base lane.',
+        caption: 'Current battle view from the updated five-age playable build.',
+        frame: 'pixel'
+      }
+    ],
+    accent: {
+      primary: '#f0b15d',
+      secondary: '#7fc9ff',
+      glow: 'rgba(127, 201, 255, 0.3)',
+      surface: '#18253a'
+    }
+  },
+  {
     slug: 'burn-the-village',
     title: 'Burn the Village',
     tagline: 'Lay hay, place TNT, and turn a tiny village into a perfectly planned chain reaction.',
@@ -132,39 +189,6 @@ export const studioGames: GameEntry[] = [
       secondary: '#ffbf57',
       glow: 'rgba(70, 209, 200, 0.34)',
       surface: '#102026'
-    }
-  },
-  {
-    slug: 'aow',
-    title: 'Age of War',
-    tagline: 'Train units, build towers, fire supers, and fight from the stone age to the future.',
-    status: 'Playable now',
-    genre: 'Lane battle strategy',
-    stack: 'Five-age ladder',
-    fact: 'Units, towers, and supers',
-    repoUrl: 'https://github.com/DavisWang/aow',
-    liveUrl: 'https://daviswang.github.io/aow/',
-    detailCopy: [
-      'Age of War is a fast base-versus-base lane battler where every match is about building pressure, holding the line, and breaking the enemy base before they break yours.',
-      'You buy units, build towers, trigger supers, and age up across five eras, with each jump unlocking a stronger roster and a new way to take over the battlefield.',
-      'The full ladder now runs from cavemen to future war machines, so the payoff is surviving long enough to unleash the late-game army and watch the lane flip in your favor.'
-    ],
-    cardImage: asset('assets/games/aow/title-screen.png'),
-    cardAlt: 'Age of War title screen showing the five-age playable build and side-by-side era characters.',
-    icon: asset('assets/games/aow/icon.svg'),
-    detailMedia: [
-      {
-        src: asset('assets/games/aow/battle-view.png'),
-        alt: 'Age of War battle view with tower controls, battlefield banner, and base lane.',
-        caption: 'Current battle view from the updated five-age playable build.',
-        frame: 'pixel'
-      }
-    ],
-    accent: {
-      primary: '#f0b15d',
-      secondary: '#7fc9ff',
-      glow: 'rgba(127, 201, 255, 0.3)',
-      surface: '#18253a'
     }
   },
   {

@@ -8,7 +8,7 @@ describe('App', () => {
 
     expect(screen.getByRole('heading', { level: 1, name: /retro browser games with early 2000 nostalgia/i })).toBeInTheDocument();
     expect(screen.queryByText(/puzzle, combat, and bot-sim projects built for the browser/i)).not.toBeInTheDocument();
-    expect(screen.getByText(/6 published builds/i)).toBeInTheDocument();
+    expect(screen.getByText(/7 published builds/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /open neon blaster x details/i })).toBeInTheDocument();
     expect(screen.getAllByRole('button', { name: /open .* details/i })[0]).toHaveAccessibleName(/open neon blaster x details/i);
   });
