@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 100" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Pwner Studios wordmark concept</title>
+  <desc id="logoDesc">Cartridge with pixel-art P monogram and wordmark; retro browser-game palette.</desc>
+  <defs>
+    <linearGradient id="cartridgeFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121a28"/>
+      <stop offset="100%" stop-color="#06080d"/>
+    </linearGradient>
+    <linearGradient id="rimGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9ec8ff"/>
+      <stop offset="50%" stop-color="#5a7ab8"/>
+      <stop offset="100%" stop-color="#3d5a8a"/>
+    </linearGradient>
+    <filter id="cyanGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Cartridge mark: glow on shell only so pixel P stays crisp -->
+  <g transform="translate(8 10)">
+    <g filter="url(#cyanGlow)">
+      <rect x="0" y="0" width="58" height="78" rx="6" fill="url(#cartridgeFace)" stroke="url(#rimGlow)" stroke-width="2"/>
+      <rect x="6" y="6" width="46" height="54" rx="3" fill="#0a0e14" stroke="rgba(167,196,255,0.12)" stroke-width="1"/>
+      <rect x="10" y="62" width="38" height="10" rx="2" fill="#1a1510" stroke="#c9a227" stroke-width="1"/>
+      <rect x="13" y="65" width="5" height="4" rx="0.5" fill="#e8c547"/>
+      <rect x="22" y="65" width="5" height="4" rx="0.5" fill="#e8c547"/>
+      <rect x="31" y="65" width="5" height="4" rx="0.5" fill="#e8c547"/>
+      <rect x="40" y="65" width="5" height="4" rx="0.5" fill="#e8c547"/>
+    </g>
+    <!-- 8-bit P: 4px grid, 2-cell (8px) stroke; 9×12 cells = 36×48; ox=6+(46-36)/2, oy=6+(54-48)/2 -->
+    <g fill="#f6f0d9" shape-rendering="crispEdges">
+      <rect x="11" y="9" width="36" height="8"/>
+      <rect x="11" y="17" width="8" height="4"/>
+      <rect x="39" y="17" width="8" height="4"/>
+      <rect x="11" y="21" width="8" height="4"/>
+      <rect x="39" y="21" width="8" height="4"/>
+      <rect x="11" y="25" width="8" height="4"/>
+      <rect x="39" y="25" width="8" height="4"/>
+      <rect x="11" y="29" width="8" height="4"/>
+      <rect x="39" y="29" width="8" height="4"/>
+      <rect x="11" y="33" width="36" height="8"/>
+      <rect x="11" y="41" width="8" height="4"/>
+      <rect x="11" y="45" width="8" height="4"/>
+      <rect x="11" y="49" width="8" height="4"/>
+      <rect x="11" y="53" width="8" height="4"/>
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <text x="82" y="48" fill="#f6f0d9" font-family="'Chakra Petch', 'Segoe UI', system-ui, sans-serif" font-size="34" font-weight="700" letter-spacing="0.04em">PWNER</text>
+  <text x="82" y="74" fill="#f0b15d" font-family="'Chakra Petch', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="500" letter-spacing="0.35em">STUDIOS</text>
+  <!-- Accent underline -->
+  <rect x="82" y="82" width="268" height="2" fill="url(#rimGlow)" opacity="0.55"/>
+</svg>

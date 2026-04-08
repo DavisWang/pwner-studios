@@ -35,13 +35,13 @@ Confirm:
 1. Push to `main`.
 2. Wait for the `Deploy Pages` workflow to finish.
 3. Open the Pages URL and confirm:
-   - hero title renders correctly
+   - hero logo and title render correctly (favicon tab icon if the browser picked it up)
    - each game card opens the right detail panel
    - `Play game`, `View repo`, and `About Davis Wang` links all work
 
 ## If the repo name changes
 
-Update the `base` value in `vite.config.ts` before deploying.
+Update the `base` value in `vite.config.ts` before deploying, and update the favicon `href` in `index.html` to match (see `docs/brand.md`).
 
 Current value:
 

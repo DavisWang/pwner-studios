@@ -44,6 +44,7 @@ If you rename the GitHub repo, update `base` in `vite.config.ts` to match the ne
 - app shell lives in `src/App.tsx`
 - visual system lives in `src/styles.css`
 - shipped media lives in `public/assets/games/`
+- studio logo and favicon source live in `public/assets/brand/` — see `docs/brand.md`
 
 ## Shipping notes
 

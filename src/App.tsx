@@ -4,6 +4,13 @@ import { studioGames } from './data/games';
 
 const developerUrl = 'https://daviswang.github.io/personal-website/';
 
+function publicAsset(path: string) {
+  return `${import.meta.env.BASE_URL}${path}`;
+}
+
+const studioLogoIcon = publicAsset('assets/brand/pwner-studios-logo-icon.svg');
+const studioLogoHorizontal = publicAsset('assets/brand/pwner-studios-logo-horizontal.svg');
+
 function getSlugFromHash(hash: string) {
   const nextSlug = hash.replace(/^#/, '').trim().toLowerCase();
   return studioGames.some((game) => game.slug === nextSlug) ? nextSlug : null;
@@ -142,7 +149,16 @@ function App() {
       <main className="site-shell" aria-hidden={selectedGame ? true : undefined} inert={selectedGame ? true : undefined}>
         <section className="hero panel">
           <div className="hero__copy">
-            <p className="eyebrow">Pwner Studios</p>
+            <div className="hero__brand">
+              <img
+                className="hero__logo--horizontal"
+                src={studioLogoHorizontal}
+                alt="Pwner Studios"
+                width={380}
+                height={100}
+                decoding="async"
+              />
+            </div>
             <h1>Retro browser games with early 2000 nostalgia</h1>
             <div className="hero__actions">
               <a className="button button--primary" href="#lineup">
@@ -229,7 +245,17 @@ function App() {
         </section>
 
         <footer className="footer panel">
-          <p>Pwner Studios is Davis Wang&apos;s home for retro-inspired browser games.</p>
+          <div className="footer__intro">
+            <img
+              className="footer__logo"
+              src={studioLogoIcon}
+              alt=""
+              width={40}
+              height={40}
+              decoding="async"
+            />
+            <p>Pwner Studios is Davis Wang&apos;s home for retro-inspired browser games.</p>
+          </div>
           <a className="footer__link" href={developerUrl} target="_blank" rel="noreferrer">
             About Davis Wang
           </a>
