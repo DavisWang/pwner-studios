@@ -214,5 +214,29 @@ export const studioGames: GameEntry[] = [
       glow: 'rgba(44, 185, 164, 0.3)',
       surface: '#1b1a1c'
     }
+  },
+  {
+    slug: 'dstris',
+    title: 'Dstris',
+    tagline: 'Competitive Tetris versus CPU — SRS, garbage queue, and Jstris-style attacks.',
+    status: 'Playable now',
+    genre: 'Arcade puzzle',
+    stack: 'TypeScript · Vite',
+    fact: 'Easy / Medium / Hard CPU',
+    repoUrl: 'https://github.com/DavisWang/dstris',
+    liveUrl: 'https://daviswang.github.io/dstris/',
+    detailCopy: [
+      'Dstris is single-player Tetris played against a CPU — same rules as versus modes you know from clients like Jstris: SRS rotation, 7-bag, attack table, and a garbage queue where your sends cancel incoming garbage before it lands.',
+      'Difficulty tiers tune how sharp the opponent plays; on-screen gauges show pending versus materializing garbage so you can read spikes and defend.',
+      'Built as TypeScript with Vite and browser tests — no runtime deps — so it loads fast and stays easy to iterate.'
+    ],
+    cardImage: asset('assets/games/dstris/poster.svg'),
+    cardAlt: 'Dstris poster with split player and CPU Tetris boards and VS CPU lettering.',
+    accent: {
+      primary: '#5ad4ff',
+      secondary: '#f0a000',
+      glow: 'rgba(90, 212, 255, 0.28)',
+      surface: '#121820'
+    }
   }
 ];
