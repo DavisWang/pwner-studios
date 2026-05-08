@@ -226,7 +226,7 @@ export const studioGames: GameEntry[] = [
     repoUrl: 'https://github.com/DavisWang/dstris',
     liveUrl: 'https://daviswang.github.io/dstris/',
     detailCopy: [
-      'Dstris is single-player Tetris played against a CPU — same rules as versus modes you know from clients like Jstris: SRS rotation, 7-bag, attack table, and a garbage queue where your sends cancel incoming garbage before it lands.',
+      'Dstris is single-player Tetris played against a CPU — same rules as versus modes you know from clients like Jstris: SRS (Standard Rotation System — guideline kicks and rotation), 7-bag, attack table, and a garbage queue where your sends cancel incoming garbage before it lands.',
       'Difficulty tiers tune how sharp the opponent plays; on-screen gauges show pending versus materializing garbage so you can read spikes and defend.',
       'Built as TypeScript with Vite and browser tests — no runtime deps — so it loads fast and stays easy to iterate.'
     ],

@@ -1,35 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
-  <title id="title">Dstris poster</title>
-  <desc id="desc">Split Tetris boards versus CPU with stacked tetromino blocks.</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="dstris-title dstris-desc">
+  <title id="dstris-title">Dstris poster</title>
+  <desc id="dstris-desc">Two Tetris playfields with blocks aligned to the same cell grid.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+    <linearGradient id="dstris-bg" x1="0%" x2="100%" y1="0%" y2="100%">
       <stop offset="0%" stop-color="#0d1118" />
       <stop offset="100%" stop-color="#151d28" />
     </linearGradient>
   </defs>
-  <rect width="960" height="600" fill="url(#bg)" />
-  <rect x="320" y="40" width="320" height="4" fill="#5ad4ff" fill-opacity="0.35" />
+  <rect width="960" height="600" fill="url(#dstris-bg)" />
   <g stroke="#5ad4ff" stroke-opacity="0.35" stroke-width="2" fill="none">
     <rect x="96" y="72" width="168" height="336" rx="4" />
     <rect x="696" y="72" width="168" height="336" rx="4" />
   </g>
-  <g transform="translate(112 380)">
-    <rect width="32" height="32" fill="#00f0f0" rx="2" />
-    <rect x="36" width="32" height="32" fill="#f0f000" rx="2" />
-    <rect x="72" width="32" height="32" fill="#f0a000" rx="2" />
-    <rect x="36" y="-36" width="32" height="32" fill="#a000f0" rx="2" />
-    <rect y="-72" width="32" height="32" fill="#00f000" rx="2" />
+  <g>
+    <rect x="152" y="380" width="28" height="28" fill="#00f0f0" rx="3" />
+    <rect x="180" y="380" width="28" height="28" fill="#f0f000" rx="3" />
+    <rect x="208" y="380" width="28" height="28" fill="#f0a000" rx="3" />
+    <rect x="180" y="352" width="28" height="28" fill="#a000f0" rx="3" />
+    <rect x="208" y="352" width="28" height="28" fill="#a000f0" rx="3" />
+    <rect x="208" y="324" width="28" height="28" fill="#00f000" rx="3" />
+    <rect x="180" y="324" width="28" height="28" fill="#00f000" rx="3" />
   </g>
-  <g transform="translate(712 356)">
-    <rect width="32" height="32" fill="#f00000" rx="2" />
-    <rect x="36" width="32" height="32" fill="#0000f0" rx="2" />
-    <rect x="72" width="32" height="32" fill="#f0a000" rx="2" />
-    <rect x="36" y="-36" width="32" height="32" fill="#00f0f0" rx="2" />
-    <rect y="-72" width="64" height="32" fill="#f0f000" rx="2" />
+  <g>
+    <rect x="724" y="380" width="28" height="28" fill="#f00000" rx="3" />
+    <rect x="752" y="380" width="28" height="28" fill="#0000f0" rx="3" />
+    <rect x="780" y="380" width="28" height="28" fill="#f0a000" rx="3" />
+    <rect x="752" y="352" width="28" height="28" fill="#00f0f0" rx="3" />
+    <rect x="780" y="352" width="28" height="28" fill="#00f0f0" rx="3" />
+    <rect x="724" y="352" width="28" height="28" fill="#f0f000" rx="3" />
+    <rect x="752" y="324" width="28" height="28" fill="#f0f000" rx="3" />
+    <rect x="780" y="324" width="28" height="28" fill="#f0f000" rx="3" />
   </g>
   <text x="482" y="252" fill="#5ad4ff" font-family="monospace" font-size="72" font-weight="700" text-anchor="middle" opacity="0.22">VS</text>
   <text x="480" y="248" fill="#fdf6e8" font-family="monospace" font-size="72" font-weight="700" text-anchor="middle">VS</text>
   <text x="480" y="298" fill="#5ad4ff" font-family="monospace" font-size="24" letter-spacing="8" text-anchor="middle" opacity="0.9">CPU</text>
   <text x="76" y="536" fill="#fdf6e8" font-family="monospace" font-size="52" font-weight="700" letter-spacing="4">DSTRIS</text>
-  <text x="78" y="572" fill="#5ad4ff" font-family="monospace" font-size="18" letter-spacing="3">VS CPU | SRS | GARBAGE QUEUE</text>
+  <text x="78" y="572" fill="#5ad4ff" font-family="monospace" font-size="17" letter-spacing="2">VS CPU | SRS | GARBAGE</text>
 </svg>
